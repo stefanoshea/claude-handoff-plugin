@@ -9,7 +9,7 @@ When your context window gets large, run `/handoff` to generate a concise summar
 ## Install
 
 ```
-/plugin install handoff@stefanoshea/handoff-plugin
+/plugin install handoff@stefanoshea/claude-handoff-plugin
 ```
 
 ## Usage
@@ -22,4 +22,4 @@ When your context window gets large, run `/handoff` to generate a concise summar
 ## How it works
 
 - **Skill** (`skills/handoff/SKILL.md`) — Tells Claude how to analyze the conversation and generate a structured handoff summary
-- **Hook** (`scripts/handoff-inject.sh`) — A `SessionStart` hook that detects the handoff file after `/clear`, injects its contents, and deletes the file
+- **Hook** (`scripts/handoff-inject.sh`) — A `SessionStart` hook that detects the handoff file after `/clear`, outputs structured JSON with `systemMessage` (shown in UI immediately) and `additionalContext` (injected into Claude's context), then deletes the file

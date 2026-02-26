@@ -16,7 +16,7 @@ digraph handoff {
     "Skill invoked" [shape=doublecircle];
     "Analyze conversation" [shape=box];
     "Generate summary" [shape=box];
-    "Write to handoff-context.md" [shape=box];
+    "Write to ~/.claude/handoff-context.md" [shape=box];
     "Instruct user to /clear" [shape=box];
     "User runs /clear" [shape=diamond];
     "Hook injects summary + deletes file" [shape=box];

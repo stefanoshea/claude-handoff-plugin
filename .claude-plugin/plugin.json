@@ -1,7 +1,7 @@
 {
   "name": "handoff",
   "description": "Preserve session context and continue work in a fresh context window. Run /handoff to save state, then /clear to start fresh with your summary auto-injected.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Stefan O'Shea"
   }
